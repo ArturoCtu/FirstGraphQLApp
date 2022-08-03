@@ -15,38 +15,39 @@ To List, Add, Remove and Update Users in a MongoDB using GraphQL and NodeJs.
 - List:  
 
 query {
-  users {
+
+  `users {
     _id
     firstName
     lastname
     age
   }
-}
+}`
 - Add: 
 
-mutation {
+`mutation {
   createUser(input: 
     {firstName: "Arturo", 
       lastname: "Cantú", 
       age: 25}) {
     _id
   }
-}
+}`
 - Delete: 
 
-mutation {
+`mutation {
   deleteUser(_id: "62e9bfc55ac5d25f1ec8f245") {
     _id
     firstName
   }
-}
+}`
 - Update:
 
-mutation {
+`mutation {
   updateUser(_id: "62e9bfc55ac5d25f1ec8f245", input: {firstName: "Arturo", lastname:"Cantú", age:25}) {
     _id
     firstName
     lastname
     age
   }
-}
+}`
