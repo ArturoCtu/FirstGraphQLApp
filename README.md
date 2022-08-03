@@ -13,6 +13,7 @@ To List, Add, Remove and Update Users in a MongoDB using GraphQL and NodeJs.
 
 ## Functions
 - List:  
+
 query {
   users {
     _id
@@ -22,6 +23,7 @@ query {
   }
 }
 - Add: 
+
 mutation {
   createUser(input: 
     {firstName: "Arturo", 
@@ -31,6 +33,7 @@ mutation {
   }
 }
 - Delete: 
+
 mutation {
   deleteUser(_id: "62e9bfc55ac5d25f1ec8f245") {
     _id
@@ -38,6 +41,7 @@ mutation {
   }
 }
 - Update:
+
 mutation {
   updateUser(_id: "62e9bfc55ac5d25f1ec8f245", input: {firstName: "Arturo", lastname:"Cantú", age:25}) {
     _id
